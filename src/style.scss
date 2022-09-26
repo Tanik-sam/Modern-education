@@ -1,0 +1,96 @@
+@import "./assets/sass/base/normalize";
+@import "./assets/sass/abstract/constants";
+@import "./assets/sass/abstract/placeholders";
+@import "./assets/sass/abstract/mixins";
+
+@import "./assets/sass/base/buttons";
+@import "./assets/sass/components/navigation";
+@import "./assets/sass/layouts/wrapper";
+@import "./assets/sass/layouts/header";
+@import "./assets/sass/components/main";
+@import "./assets/sass/components/courses";
+@import "./assets/sass/components/about";
+@import "./assets/sass/components/feedback";
+@import "./assets/sass/components/modal";
+@import "./assets/sass/components/back-to-top";
+@import "./assets/sass/layouts/columns";
+
+@import "./assets/sass/layouts/footer";
+
+@import "./assets/sass/base/base";
+
+
+
+h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 67px;
+    color: $color-light;
+    @include screen1200 {
+        font-size: 42px;
+        line-height: 48px;;
+    }
+    @include media-mobile {
+        font-size: 34px;
+        line-height: 45px;;
+    }
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 45px;
+    color: $color-light;
+    @include media-mobile {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    @include screen1200 {
+        font-size: 24px;
+        line-height: 30px;;
+    }
+}
+
+h3 {
+    font: {
+        family: $font_sansserif;
+        style: normal;
+        size: 1.8rem;
+        weight: 600;
+        color: $color-light_blue;
+    }
+
+    letter-spacing: 0.06em;
+    line-height: 100%;
+    text-align: left;
+    color: $color-additional;
+    margin: 1rem 0;
+    @include screen1200 {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+    }
+}
+
+h4 {
+    font-family: $font_sansserif;
+    font-style: normal;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+h5 {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: $color-light;
+}

@@ -1,0 +1,148 @@
+.about{
+    padding-top: 40px;
+    background-color: $color-primary;
+    background-image: url("./assets/img/about_img_bckg.svg");
+    background-repeat:  no-repeat;
+    background-position-x: 62%;
+    background-position-y: -60px;
+    @include screen610 {
+        padding: 0 10px 0 10px;
+    }
+}
+.about_wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap:20px;
+}
+.about__title{
+margin: 0;
+}
+.about__text{
+    @extend %font-prim;
+    color: $color-light;
+}
+
+.about__promo{
+
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+.about__promo-img{
+    background-image: url("./assets/icons/benefit_icon.svg");
+    width: 20px;
+    height: 20px;
+}
+.about__promo-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    width: 380px;
+}
+.about__image {
+    background-image: url("./assets/img/about.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 320px;
+    height: 289px;
+}
+.about__content{
+    @extend %font-prim;
+    max-width:780px;
+}
+.person_wrapper{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap:40px;
+    @include screen1200 {
+        justify-content: center;
+    }
+}
+.person__info{
+    @extend %font-prim;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap:20px;
+    @include screen1200 {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.person-info__container{
+    overflow: hidden;
+}
+.person-info__wrapper{
+
+position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap:40px;
+    @include media-tablet {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+}
+
+.person__info-text{
+    color:$color-light;
+    max-width: 291px;
+
+}
+.person__info-img{
+    width: 180px;
+    height: 179px;
+    border-radius: 90px;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    &_1{
+        background-image: url("./assets/img/person.png");
+    }
+    &_2{
+        background-image: url("./assets/img/person.png");
+    }
+    @include screen1200 {
+        width: 100px;
+        height: 99px;
+    }
+}
+.arrow{
+    cursor: pointer;
+    &:hover {
+        stroke: $color-orange-hover;
+    }
+        &--active {
+            stroke: $color-orange-active;
+        }
+}
+
+@keyframes move-right {
+    from {left: 0px;}
+    to {left: 540px;}
+  }
+
+  .transition-right {
+    animation-name: move-right;
+    animation-duration: 1s;
+  }
+  @keyframes move-left {
+    from {left: 0px;}
+    to {left: -540px;}
+  }
+  .transition-left {
+    animation-name: move-left;
+    animation-duration: 1s;
+  }

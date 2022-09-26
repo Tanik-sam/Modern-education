@@ -1,0 +1,66 @@
+.header {
+    background: $color-primary;
+    padding: 10px 0 10px 0;
+    height: 80px;
+    @extend %font-prim;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.logo__contact {
+color: $color-light;
+&:hover {
+    color: $color-orange;
+}
+&--active{
+  color: $color-orange-active;
+}
+@include media-tablet {
+    display: none;
+}
+}
+.logo__contact svg{
+    fill: $color-light;
+    &:hover {
+        fill: $color-orange;
+    }
+    &--active{
+      fill: $color-orange-active;
+    }
+}
+
+.logo_telegram {
+    width: 30px;
+    height: 30px;
+    color: $color-light;
+    @include media-tablet {
+        display: none;
+    }
+}
+.logo__image {
+    background-image: url("./assets/icons/Logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 176px;
+    height: 60px;
+    @include media-tablet {
+        margin-left: 60px;
+    }
+}
+.logo{
+        text-decoration: none;     
+}
+.header__logo-line {
+    display: flex;
+
+    @include media-mobile {
+        justify-content: center;
+        flex-grow: 1;
+        position: relative;
+    }
+    
+}

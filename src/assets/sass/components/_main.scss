@@ -1,0 +1,80 @@
+.main {
+    height: 540px;
+    background-color: rgb(37, 37, 37);
+    @include screen1200 {
+        height: 600px;
+    } 
+    @include media-tablet{
+        height: 700px;
+            padding: 0 10px 0 10px;
+    }
+
+}
+.main__wrapper{
+    padding-top: 40px;
+    background-image: url("./assets/img/main_img_bckg.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    display: flex;
+    flex-direction: row;
+}
+.main__image {
+    background-image: url("./assets/img/main.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 451px;
+    height: 398px;
+}
+.main__title{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.main__content {
+    max-width: 780px;
+}
+.title_yellow {
+    color: $color-orange;
+    font-weight: 700;
+}
+.main__promo {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 20px;
+}
+.main__promo-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    width: 380px;
+}
+.main__promo-img{
+    background-image: url("./assets/icons/benefit_icon.svg");
+    width: 20px;
+    height: 20px;
+    
+}
+.main__text {
+    @extend %font-prim;
+    color: $color-light;
+}
+.main__buttons{
+    margin-top:26px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 40px;
+    &>button{
+        width:320px;
+    }
+    @include media-tablet {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}

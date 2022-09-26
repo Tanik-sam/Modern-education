@@ -1,0 +1,73 @@
+.button {
+    background: none;
+    @extend %font-prim;
+    padding: 20px 40px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: $color-orange;
+    border: 3px solid $color-orange;
+    box-shadow: 0px 4px 4px rgba(245, 207, 18, 0.25);
+    width: 100%;
+    &:hover {
+        border:3px solid $color-orange-hover;
+        background: $color-orange-hover;
+        color: $color-primary;
+    }
+        &--active {
+            border:$color-orange-active;
+            background: $color-orange-active;
+            color: $color-light;
+        }
+&_white {
+    background:$color-light;
+    box-shadow: 0px 4px 4px rgba(85, 85, 85, 0.25);
+    border: 2px solid  $color-button-black;
+    color: $color-button-black;
+    &:hover {
+        border:2px solid $color-primary;
+        box-shadow: 0px 4px 4px rgba(85, 85, 85, 0.25);
+        background: $color-primary;
+        color: $color-light;
+    }
+        &--active {
+            background: $color-light;
+            color: $color-background-gray;
+        }
+
+}
+    &_colored {
+        background: $color-orange;
+        color: $color-primary;
+        &:hover {
+            border:3px solid $color-orange-hover;
+            background: $color-orange-hover;
+            color: $color-light;
+        }
+        &--active {
+            border:3px solid $color-orange-active;
+            background: $color-orange-active;
+            color: $color-light;
+        }
+    }
+}
+   
+.textarea {
+    background: $color-light;
+    @extend %font-prim;
+    padding: 20px 40px;
+    font-size: 16px;
+    line-height: 25px;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 5px;
+    color: $color-primary;
+    &--active {
+        border:$color-orange-active;
+        background: $color-orange-active;
+        color: $color-light;
+    }
+}
